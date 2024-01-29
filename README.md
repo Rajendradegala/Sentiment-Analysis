@@ -26,9 +26,19 @@ To install the above modules into your local machine, run the following command 
 
   2. DATA PREPROCESSING:
 
-  3. As we are dealing with the text data, we need to preprocess it using word embeddings.
+ As we are dealing with the text data, we need to preprocess it using word embeddings.
 
 Let’s see what our data looks like.
 
-import pandas as pd
+      import pandas as pd
   --> (df = pd.read_csv("./DesktopDataFlair/Sentiment-Analysis/Tweets.csv") )
+
+
+We only need the text and sentiment column:
+
+   -->  [review_df = df[['text','airline_sentiment']]
+      print(review_df.shape)
+      review_df.head(5)]
+
+
+There are more than 14000 data samples in the sentiment analysis dataset.
