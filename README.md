@@ -40,13 +40,11 @@ We only need the text and sentiment column:
       print(review_df.shape)
       review_df.head(5)]
 
-
-  [](![df columns](https://github.com/Rajendradegala/Sentiment-Analysis/assets/140039152/1346d955-13a6-4aed-8684-0b4e85260740)
-
-
-
 There are more than 14000 data samples in the sentiment analysis dataset.
   
    Let's check the column names.
 
 --->  df.columns
+
+[](![df columns](https://github.com/Rajendradegala/Sentiment-Analysis/assets/140039152/1346d955-13a6-4aed-8684-0b4e85260740)
+
