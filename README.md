@@ -11,6 +11,9 @@ sentiment analysis is a methodology for analyzing a piece of text to discover th
 
 The dataset contains more than 14000 tweets data samples classified into 3 types: positive, negative, neutral.
 
+![types of sentiment ](https://github.com/Rajendradegala/Sentiment-Analysis/assets/140039152/c80e6cc0-73dc-4c58-ae28-834a3790fa93)
+
+
 Tools and Libraries used
 * Python – 3.x
 * Pandas – 1.2.4
