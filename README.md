@@ -16,3 +16,8 @@ Tools and Libraries used
 * Pandas – 1.2.4
 * Matplotlib – 3.3.4
 * TensorFlow – 2.4.1
+
+
+To install the above modules into your local machine, run the following command in your command line.
+
+  (pip install pandas matplotlib tensorflow)
