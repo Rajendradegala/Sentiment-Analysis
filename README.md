@@ -42,3 +42,7 @@ We only need the text and sentiment column:
 
 
 There are more than 14000 data samples in the sentiment analysis dataset.
+  
+   Let's check the column names.
+
+--->  df.columns
