@@ -56,4 +56,7 @@ We don’t really need neutral reviews in our dataset for this binary classifica
 
 ![dataset ahead](https://github.com/Rajendradegala/Sentiment-Analysis/assets/140039152/473fa705-09ab-457b-8ce1-4a95362aaf6f)
 
+Check the values of the airline sentiment column.
+
+  review_df["airline_sentiment"].value_counts()
 
