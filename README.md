@@ -67,3 +67,5 @@ The labels for this dataset are categorical. Machines understand only numeric da
 sentiment_label = review_df.airline_sentiment.factorize()
 sentiment_label
 
+
+![sentiment label](https://github.com/Rajendradegala/Sentiment-Analysis/assets/140039152/60644b73-6b8d-4bb6-a257-4c918b39a140)
