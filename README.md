@@ -60,3 +60,6 @@ Check the values of the airline sentiment column.
 
   review_df["airline_sentiment"].value_counts()
 
+  ![sentiment label count](https://github.com/Rajendradegala/Sentiment-Analysis/assets/140039152/f1fa6c8c-d3fb-4bcf-aa29-192fa398a26c)
+
+
