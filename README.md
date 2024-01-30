@@ -54,3 +54,6 @@ There are more than 14000 data samples in the sentiment analysis dataset.
 
 We don’t really need neutral reviews in our dataset for this binary classification problem. So, drop those rows from the dataset
 
+![dataset ahead](https://github.com/Rajendradegala/Sentiment-Analysis/assets/140039152/473fa705-09ab-457b-8ce1-4a95362aaf6f)
+
+
