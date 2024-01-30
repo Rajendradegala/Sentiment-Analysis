@@ -62,4 +62,8 @@ Check the values of the airline sentiment column.
 
   ![sentiment label count](https://github.com/Rajendradegala/Sentiment-Analysis/assets/140039152/f1fa6c8c-d3fb-4bcf-aa29-192fa398a26c)
 
+The labels for this dataset are categorical. Machines understand only numeric data. So, convert the categorical values to numeric using the factorize() method. This returns an array of numeric values and an Index of categories.
+
+sentiment_label = review_df.airline_sentiment.factorize()
+sentiment_label
 
