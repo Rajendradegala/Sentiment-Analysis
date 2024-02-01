@@ -188,6 +188,67 @@ best_params = grid_search.best_params_
 print("Best Hyperparameters:", best_params)
 
 
+7. CROSS-VALIDATION:
+
+Cross-validation is a crucial technique for assessing the performance of your model and ensuring that it generalizes well to new data. One common method is k-fold cross-validation, where the training set is split into k smaller sets. The model is trained on k-1 of the folds and validated on the remaining fold. This process is repeated k times, with each fold used as the validation set exactly once.
+
+
+python
+from sklearn.model_selection import cross_val_score
+from sklearn.linear_model import LogisticRegression
+
+
+# Initialize the classifieR
+
+log_reg_classifier = LogisticRegression()
+
+
+# Perform 5-fold cross-validation
+
+cv_scores = cross_val_score(log_reg_classifier, X, y, cv=5)
+
+
+# Print the cross-validation scores
+
+print("Cross-Validation Scores:", cv_scores)
+print("Mean CV Score:", cv_scores.mean())
+
+
+# MODEL INTERPRETABILITY:
+
+
+LIME (Local Interpretable Model-agnostic Explanations) is a fantastic technique for model interpretability.It's used to explain the predictions of any machine learning model. LIME works by approximating the predictions of the model in the vicinity of a particular instance.
+
+python
+import lime
+import lime.lime_tabular
+from sklearn.ensemble import RandomForestClassifier
+from lime.lime_text import LimeTextExplainer
+
+
+# Initialize the classifier
+
+rf_classifier = RandomForestClassifier()
+rf_classifier.fit(X_train, y_train)
+
+# Initialize the LIME explainer
+
+explainer = LimeTextExplainer(class_names=['class_0', 'class_1'])
+
+# Choose a specific instance for explanation
+
+text_instance = "Your text instance here"
+
+# Generate an explanation for the instance
+
+explanation = explainer.explain_instance(text_instance, rf_classifier.predict_proba, num_features=10)
+
+# Display the explanation
+
+explanation.show_in_notebook()
+
+
+
 
 
 
