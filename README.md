@@ -248,6 +248,21 @@ explanation = explainer.explain_instance(text_instance, rf_classifier.predict_pr
 explanation.show_in_notebook()
 
 
+# Evaluation Metrics:
+
+Evaluation metrics are crucial for assessing the performance of machine learning models. Common metrics include accuracy, precision, recall, F1 score, and area under the ROC curve (AUC-ROC). 
+
+Each metric provides unique insights into how well the model is performing.
+
+
+For instance, accuracy measures the proportion of correctly classified instances, while precision and recall focus on the model's ability to correctly identify positive instances. 
+
+The F1 score balances precision and recall, making it useful when there is an uneven class distribution.
+
+
+
+
+
 
 
 
