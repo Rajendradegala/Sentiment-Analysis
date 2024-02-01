@@ -69,3 +69,55 @@ sentiment_label
 
 
 ![sentiment label](https://github.com/Rajendradegala/Sentiment-Analysis/assets/140039152/60644b73-6b8d-4bb6-a257-4c918b39a140)
+
+
+3.Exploratory Data Analysis(EDA):
+
+You can use the Matplotlib and Seaborn libraries to create visualizations like histograms, scatter plots, and box plots to explore the relationships and distributions within your dataset.
+
+python
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+# Create a histogram
+sns.histplot(data=df, x='your_column', kde=True)
+plt.show()
+
+
+Sure! Here's an example of how you can create a histogram using the Seaborn library in Python:
+
+python
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+# Assuming 'sentiment_data' is your dataset containing the sentiment classes
+sns.set(style="whitegrid")
+plt.figure(figsize=(8, 6))
+sns.countplot(x='sentiment_class', data=sentiment_data)
+plt.title('Distribution of Sentiment Classes')
+plt.show()
+
+4.TEXT VECTORIZATION:
+
+
+python
+from sklearn.feature_extraction.text import TfidfVectorizer
+
+# Assuming 'corpus' is your collection of text data
+
+
+vectorizer = TfidfVectorizer()
+X = vectorizer.fit_transform(corpus)
+
+print(vectorizer.get_feature_names_out())
+print(X.shape)
+
+
+
+
+
+
+
+
+
+
