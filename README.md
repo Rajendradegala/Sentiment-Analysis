@@ -113,6 +113,45 @@ print(vectorizer.get_feature_names_out())
 print(X.shape)
 
 
+5.MODEL SELECTION:
+
+you can perform model selection using Python's scikit-learn library:
+
+python
+from sklearn.model_selection import train_test_split
+from sklearn.naive_bayes import MultinomialNB
+from sklearn.svm import SVC
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.metrics import accuracy_score
+
+# Assuming X_train, X_test, y_train, y_test are your training and testing data
+# Let's say you have already performed text vectorization and have your feature vectors ready
+
+# Initialize the classifiers
+nb_classifier = MultinomialNB()
+svm_classifier = SVC()
+rf_classifier = RandomForestClassifier()
+
+# Train the classifiers
+nb_classifier.fit(X_train, y_train)
+svm_classifier.fit(X_train, y_train)
+rf_classifier.fit(X_train, y_train)
+
+# Make predictions
+nb_pred = nb_classifier.predict(X_test)
+svm_pred = svm_classifier.predict(X_test)
+rf_pred = rf_classifier.predict(X_test)
+
+# Evaluate the models
+nb_accuracy = accuracy_score(y_test, nb_pred)
+svm_accuracy = accuracy_score(y_test, svm_pred)
+rf_accuracy = accuracy_score(y_test, rf_pred)
+
+print("Naive Bayes Accuracy:", nb_accuracy)
+print("SVM Accuracy:", svm_accuracy)
+print("Random Forest Accuracy:", rf_accuracy)
+
+
 
 
 
