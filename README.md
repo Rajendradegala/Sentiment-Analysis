@@ -155,7 +155,37 @@ print("Naive Bayes Accuracy:", nb_accuracy)
 print("SVM Accuracy:", svm_accuracy)
 print("Random Forest Accuracy:", rf_accuracy)
 
+6.HYPERPARAMETER TUNING:
 
+ You can use techniques like grid search or random search to find the best combination of hyperparameters for your chosen model.  If you're using a Random Forest classifier, you can tune parameters like the number of trees, maximum depth, and minimum samples per leaf.
+
+
+
+python
+from sklearn.model_selection import GridSearchCV
+from sklearn.ensemble import RandomForestClassifier
+
+# Define the hyperparameters grid
+
+param_grid = {
+    'n_estimators': [100, 200, 300],
+    'max_depth': [10, 20, 30],
+    'min_samples_leaf': [1, 2, 4]
+}
+
+# Initialize the classifier
+
+rf_classifier = RandomForestClassifier()
+
+# Perform grid search
+
+grid_search = GridSearchCV(estimator=rf_classifier, param_grid=param_grid, cv=5)
+grid_search.fit(X_train, y_train)
+
+# Get the best parameters
+
+best_params = grid_search.best_params_
+print("Best Hyperparameters:", best_params)
 
 
 
